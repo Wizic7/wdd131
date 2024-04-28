@@ -1,0 +1,32 @@
+p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+body {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.subtitle {
+    color:  #006EB6;
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+img{
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
