@@ -30,3 +30,12 @@ img{
     transform: translateX(-50%);
     position: absolute;
 }
+
+.dark{
+    background-color: #333;
+    
+}
+
+.dark .subtitle{
+    color: #4e89c4;
+}
