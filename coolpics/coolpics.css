@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+:root {
+--primary-color: #52489c;
+--secondary-color: #59c3c3;
+--accent-color: #f45b69;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font: Mooli, san-serif;
+}
+h1{
+    margin: 0;
+}
+
+header {
+    font-family: var(--primary-font);
+    font-size: 3em;
+    color: var(--text-light);
+    background-color: var(--primary-color);
+    text-align: center;
+    padding-bottom: 50px;
+}
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    background-color: lightgray;
+}
+button {
+    visibility: hidden;
+
+}
+
+a:link, a:visited {
+    color: var(--primary-font);
+    margin-top: 5px;
+    padding: 5px;
+    font-size: .5em;
+}
+
+main h1 {
+    margin-top: 25px;
+    font-family: var(--primary-font);
+    font-size: 3em;
+}
+
+#gallary {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+figure {
+    display: inline;
+    margin: 25px;
+}
+
+img {
+	max-width: 100%;
+    height: 250px;
+    width: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    object-fit: cover;
+    text-align: center;
+    display: inline;
+    border: 10px white solid;
+    box-shadow: 5px 5px 10px #061a40e2;
+}
+
+footer {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    color: var(--text-light);
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+footer p {
+    margin-left: 20%;
+}
+
+  @media screen and (max-width: 800px) {
+    /* CSS rules for screens smaller than 600 pixels wide */
+    header {
+        font-family: var(--primary-font);
+        font-size: 3em;
+        color: var(--text-light);
+        background-color: var(--primary-color);
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    button {
+        visibility: visible;
+        margin-bottom: 0;
+        font-size: 1.4em;
+        font-family: var(--primary-font);
+        color: var(--text-light);
+        background-color: var(--primary-color);
+        border: none;
+    }
+    main h1 {
+        color: var(--text-dark);
+        text-align: center;
+        margin: 50px;
+        font-size: 4em;
+        font-family: var(--primary-font);
+    }
+    body {
+        font-family: var(--primary-font);
+        font-size: 1.2em;
+      }
+
+      a:link,
+      a:visited {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+  }
