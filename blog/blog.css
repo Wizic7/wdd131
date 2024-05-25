@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playpen+Sans&display=swap');
+
+/* Color pallete https://coolors.co/palette/003049-d62828-f77f00-fcbf49-eae2b7 */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #003049;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+a {
+    color: #D62828;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: Monsterrat 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 50px auto;
+}
+
+
+em{
+    font-size: 25px;
+    font-style: normal;
+}
+
+nav {
+    padding: 25px 0;
+    border-color: #FCBF49;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+
+nav > ul {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: end;
+    justify-items: end; 
+    margin-right: 5%;
+
+}
+
+.info{
+    max-width: 300px;
+    grid-column: 1/2;
+}
+
+.info > ul {
+    display: grid;
+    list-style-type: none;
+    grid-template-rows: 50px 50px 50px 50px
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.book {
+    grid-column: 2/3;
+}
+
+.book img {
+    margin-left: 50px;
+}
+
+.filter {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
