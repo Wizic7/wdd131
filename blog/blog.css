@@ -31,6 +31,25 @@ em{
     font-style: normal;
 }
 
+.skiptocontent a {
+	/* set the element to absolute positioning */
+	/* move it off screen */
+	/* Make sure it will be on the left edge of the screen */
+	/* Change the background and color to something that stands out */
+    position: absolute;
+    top: -150px;
+    background-color: #EAE2B7;
+    color: #D62828;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding: 30px 0;
+    align-content: center;
+}
+.skiptocontent a:focus {
+    top: 0px
+}
+
 nav {
     padding: 25px 0;
     border-color: #FCBF49;
