@@ -1,0 +1,112 @@
+body{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.creditcard_grid {
+    display: grid;
+    width: 600px;
+    height: 400px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr 1fr;
+}
+
+.card_front {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    display: grid;
+    z-index: 9999;
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    background-color: lightgray;
+    border-radius: 5%;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+h5 {
+    margin-left: 30px;
+    font-size: 1.3rem;
+    margin-top: 30px;
+}
+
+.card-image {
+    justify-self: end;
+    align-self: center;
+    margin-right: 30px;
+}
+
+label:has(#name) {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    margin-left: 30px;
+}
+
+label:has(#number) {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    margin-left: 30px;
+}
+
+#number {
+    width: 90%;
+    height: 30px;
+    font-size: 1.3rem;
+}
+
+#name {
+    width: 90%;
+    height: 30px;
+    font-size: 1.3rem;
+}
+
+
+
+.date {
+    width: 35%;
+    height: 30px;
+}
+
+
+.card_back {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: lightgray;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.blackbar {
+    height: 50px;
+    grid-column: 1/3;
+    align-self: center;
+    grid-row: 1/3;
+    background-color:rgba(0, 0, 0, 0.6);
+}
+
+label:has(.cvc) {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.cvc {
+    height: 30px;
+    width: 75px;
+    font-size: 1.3rem;
+}
+
+.submit_btn {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    height: 80%;
+    border: 4px solid black;
+    border-radius: 12%;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
