@@ -17,7 +17,8 @@ document.getElementById("submitButton").addEventListener("click", function submi
     event.preventDefault();
     // do the rest of the stuff
     let name = document.querySelector("#adult_name").value;
-    if (name.length > 0){
+    let totalFeeTest = totalFees();
+    if (name.length > 0 && totalFeeTest > 0){
         let formInfo = new info(name, totalFees())
         Templates.successTemplate(formInfo);
     }
