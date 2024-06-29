@@ -35,35 +35,12 @@
             <h1>Recipe Book</h1>
         </div>
         <form>
-            <input type="text" class="searchbar" placeholder="Find a Recipe">
-            <img src="images/search.svg" alt="magnifying glass graphic">
+            <input id="search-text" type="text" class="searchbar" placeholder="Find a Recipe">
+            <button id="search-btn"><img src="images/search.svg" alt="magnifying glass graphic"></button>
         </form>
     </header>
     <main>
-        <div class="recipe-grid">
-            <img src="./images/escalopes-de-poulet-a-la-creme.webp" alt="Escalope de Poulet a la Creme with steamed green beans (Chicken with Cream)" >
-            
-            <div class="info-flex">
-                <div class="tag-flex">
-                    <p class="tag">Chicken</p>
-                    <p class="tag">Entree</p>
-                </div>
-                <a href="#" class="name">Escalope de Poulet a la Creme with steamed green beans (Chicken with Cream)</a>
-
-                <span
-                    class="rating"
-                    role="img"
-                    aria-label="Rating: 4 out of 5 stars"
-                >
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-                <p class="description">Delicious quick and easy creamy rice dish. The mustard, mushrooms, and lemon all blend together wonderfully</p>
-            </div>
-        </div>
+        <div id="insert"></div>
     </main>
     <footer>
         <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
