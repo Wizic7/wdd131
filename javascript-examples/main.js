@@ -12,7 +12,7 @@ function getImagesFromOrder(obejctList) {
 function imageTemplate(image, numProcessed){
     return `<tr>
         <td>
-            <h3>${image.alt}</h3>
+            <p>${image.alt}<p>
         </td>
         <td>
             <img class="gallery-img" src="${image.src}" alt="${image.alt}">
@@ -25,7 +25,8 @@ function imageTemplate(image, numProcessed){
 
 function orderTemplate(order) {
 
-    let htmlToInsert = `<select name="image_${order}" id="image_${order}">`;
+    let htmlToInsert = `<label for="image_${order}"></label>
+    <select name="image_${order}" id="image_${order}">`;
     
     for(let x=1; x<=totalImages; x++){
         htmlToInsert += `<option value="${x}"`;

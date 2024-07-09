@@ -231,6 +231,9 @@ th{
   border: 3px solid var(--primary-color);
   color: var(--primary-color);
 }
+table p{
+  font-size: 2rem;
+}
 
 table .name {
   width: 25%;
