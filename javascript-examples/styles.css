@@ -234,7 +234,10 @@ th{
 table p{
   font-size: 2rem;
 }
-
+table label{
+  font-size: 2rem;
+  color: var(--primary-color);
+}
 table .name {
   width: 25%;
 }

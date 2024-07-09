@@ -25,7 +25,7 @@ function imageTemplate(image, numProcessed){
 
 function orderTemplate(order) {
 
-    let htmlToInsert = `<label for="image_${order}"></label>
+    let htmlToInsert = `<label for="image_${order}"> </label>
     <select name="image_${order}" id="image_${order}">`;
     
     for(let x=1; x<=totalImages; x++){
