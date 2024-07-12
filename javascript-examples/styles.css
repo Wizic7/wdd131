@@ -49,6 +49,7 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 0 5vmin;
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
 }
@@ -213,9 +214,25 @@ main{
 }
 
 /* HOMEPAGE STYLES */
+
+#short-footer{
+  position:fixed;
+  width: 100%;
+  bottom:0;
+  left:0;
+ }
+
+ #short-footer p{
+  margin: 0;
+ }
+
 .home p{
   font-size: 1.7rem;
   line-height: 1.5;
+}
+
+.home-flex{
+  display:flex
 }
 
 /* IMAGE SORTER STYLES */
@@ -269,8 +286,153 @@ select{
   color: var(--primary-color);
   background-color: white;
   box-shadow: 7px 5px 5px 4px var(--primary-color-shadow);
+  margin-left: 6vmin;
 }
 
 table{
   margin-bottom: 3vmin;
+}
+
+/* SCREEN SIZE ADJUSTMENTS */
+
+@media screen and (max-width: 850px) {
+  /* HOMEPAGE STYLES */
+
+.footer-bar{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+
+  height: 50px;
+  width: 100%;
+}
+
+.footer-bar p{
+  padding-top: 12px;
+  margin-left: 2vmin;
+  color: var(--secondary-color);
+}
+
+body{
+  max-width: 100%;
+}
+img{
+  width: 5;
+}
+
+#short-footer{
+  position: unset;
+  width: 100%;
+ }
+
+ #short-footer p{
+  margin: 0;
+ }
+
+.home p{
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+
+.home-flex{
+  display: inline;
+}
+
+/* IMAGE SORTER STYLES */
+
+.gallery-img{
+  max-width: 300px;
+  max-height: 200px;
+  display: inline;
+}
+
+th{
+  border: 2px solid var(--primary-color);
+}
+
+table p{
+  font-size: 1.5rem;
+}
+
+table label{
+  font-size: 1.5rem;
+}
+
+thead tr{
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--accent2-color);
+}
+
+td{
+  text-align: center;
+}
+
+select{
+  font-size: 1.5rem;
+  text-align: center;
+  width: 7vmin;
+  height: 2em;
+  color: var(--primary-color);
+}
+
+#save-btn{
+  font-size: 2rem;
+  
+}
+}
+
+@media screen and (max-width: 600px) {
+  .gallery-img{
+    max-width: 200px;
+    max-height: 100px;
+    display: inline;
+  }
+  table .name {
+    width: 25%;
+  }
+  table .order{
+    width: 50%;
+  }
+  th{
+    border: 1.5px solid var(--primary-color);
+  }
+  
+  table p{
+    font-size: 1rem;
+  }
+  
+  table label{
+    font-size: 1rem;
+  }
+  
+  thead tr{
+    font-size: 1rem;
+    border-bottom: 1.5px solid var(--accent2-color);
+  }
+  
+  td{
+    text-align: center;
+  }
+  
+  select{
+    font-size: 1rem;
+    text-align: center;
+    width: 7vmin;
+    height: 2em;
+    color: var(--primary-color);
+  }
+  
+  #save-btn{
+
+    font-size: 1.5rem;
+    height: 20vmin;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  select{
+    width: 15vw;
+  }
+  .gallery-img{
+    max-width: 100px;
+  }
 }
